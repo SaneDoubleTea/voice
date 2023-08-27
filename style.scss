@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Unbounded:regular);
+
+@font-face {
+    font-family: 'Google Sans';
+    src: local('Google Sans Regular'), local('Google-Sans-Regular'),
+        url('../fonts/GoogleSans-Regular.woff2') format('woff2'), url('../fonts/GoogleSans-Regular.woff') format('woff'),
+        url('../fonts/GoogleSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+/*Обнуление*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+/*--------------------*/
+
+body {
+    font-family: 'Google Sans', Unbounded;
+    color: #23262f;
+    font-size: 18px;
+    background: #f5f5f7;
+}
+
+/* container */
+.container {
+    margin: 0 auto;
+    max-width: 1560px;
+    padding: 0 20px;
+    width: 100%;
+}
+.container-mid {
+    margin: 0 auto;
+    max-width: 790px;
+    width: 100%;
+    padding: 0 20px;
+}
+/* ------------------ */
+
+//////////////////////////////////////////////////////////
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 22px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.custom-checkbox + .custom-checkbox {
+    margin-top: 10px;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 4;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    border: 1px solid #b2b5c4;
+    &__icon {
+        opacity: 0;
+        visibility: hidden;
+        width: 15px;
+        height: 15px;
+        color: #fff;
+        position: absolute;
+        top: -1px;
+        left: 0;
+        transition: all 0.1s ease-in;
+    }
+}
+.custom-checkbox input:checked ~ .checkmark {
+    border: none;
+}
+.custom-checkbox input:checked ~ .checkmark img {
+    visibility: visible;
+    opacity: 1;
+}
+.custom-checkbox input:checked ~ .checkmark:after {
+    background-color: #23262f;
+}
+///////////////////////////////////////////////
+
+//!Pagination
+.pagination {
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.pagination-nav {
+    &__list {
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        display: flex;
+        gap: 100px;
+    }
+}
+
+// .pagination-nav__item:first-child,
+.nav-item-prev,
+.nav-item-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #b2b5c4;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    &:hover {
+        background-color: #23262f;
+    }
+}
+.nav-item-prev {
+    img {
+        transform: rotate(180deg);
+    }
+}
+.nav-item--active {
+    background-color: #23262f;
+}
+.pagination-nav__item {
+    color: #b2b5c4;
+    transition: all 0.3s ease-out;
+    &:hover {
+        color: #777e90;
+    }
+}
+.pagination-nav__item--disabled {
+    background-color: #b2b5c4;
+}
+.pagination-nav__item--active {
+    color: #23262f;
+}
+.pagination-nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//Заголов "Все станции
+.title {
+    color: #23262f;
+    font-family: Unbounded;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+//КНопка назад
+.back-link {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 10px;
+    }
+
+    a {
+        font-size: 16px;
+        color: inherit;
+        font-weight: 400;
+        color: #23262f;
+        font-family: Unbounded;
+    }
+}
+
+//pages
+@import 'scss/header';
+@import 'scss/community';
+@import 'scss/guides2';
+@import 'scss/catalog';
+@import 'scss/guidesDescr';
+@import 'scss/recording';
+@import 'scss/footer';
+@import 'scss/media';

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>catalog</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- !header -->
+	<header class="header">
+		<div class="header__container container">
+			<div class="header__row">
+				<div class="header__logo logo">
+					<a href="#!"><img src="img/logo.svg" alt="site logo"></a>
+				</div>
+
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__link header__link--active"><a href="catalog.html">Каталог</a></li>
+						<li class="header__link"><a href="community.html">Сообщество</a></li>
+						<li class="header__link "><a href="guides.html">Гайды</a></li>
+					</ul>
+				</nav>
+
+				<!-- !NavBtn -->
+				<!-- <div class="header__btns header-btns-lang">
+					<button class="header-btns__btn  btn-lang btn-lang--active">Ru</button>
+					<button class="header-btns__btn btn-lang">En</button>
+				</div> -->
+				<!-- !/NavBtn -->
+
+				<!-- !Переключения языка -->
+				<ul class="header-btns-lang">
+					<button class="btn-lang btn-lang--active" data-select="option" data-value="Ru" data-index="0">Ru</button>
+					<div class="header-btns-lang__options">
+						<li class="header-btns-lang__option btn-lang" data-select="option" data-value="En" data-index="1">
+							En
+						</li>
+						<li class="header-btns-lang__option btn-lang" data-select="option" data-value="Ua" data-index="2">
+							Ua
+						</li>
+						<li class="header-btns-lang__option btn-lang" data-select="option" data-value="De" data-index="3">
+							De
+						</li>
+					</div>
+				</ul>
+				<!-- !/Переключения языка -->
+			</div>
+		</div>
+	</header>
+	<!-- !/header -->
+	<main>
+		<!-- !Catalog -->
+		<section class="catalog">
+
+
+			<div class="catalog__container container">
+
+				<!--!выпадашка фильтр -->
+				<div class="dropdown-box">
+					<div class="dropdown">
+						<ul class="dropdown__menu">
+							<div>
+								<div class="dropdown__menu-icons">
+									<img class="dropdown__menu-open" src="img/community-page/icon-open.svg" alt="icon-equiel">
+									<img class="dropdown__menu-close" src="img/community-page/cross-close.svg" alt="icon-cross">
+								</div>
+								Язык станций
+							</div>
+							<li class="dropdown__list">
+								<label class="custom-checkbox">
+									<input type="checkbox" checked>
+									<span class="checkmark">
+										<img class="checkmark__icon" src="img/community-page/checkmark.svg" alt="checkmark">
+									</span>
+									Все
+								</label>
+								<label class="custom-checkbox">
+									<input type="checkbox">
+									<span class="checkmark">
+										<img class="checkmark__icon" src="img/community-page/checkmark.svg" alt="checkmark">
+									</span>
+									Русский
+								</label>
+								<label class="custom-checkbox">
+									<input type="checkbox">
+									<span class="checkmark">
+										<img class="checkmark__icon" src="img/community-page/checkmark.svg" alt="checkmark">
+									</span>
+									Зарубежный
+								</label>
+							</li>
+						</ul>
+
+						<ul class="dropdown__menu">
+							<div>
+								<div class="dropdown__menu-icons">
+									<img class="dropdown__menu-open" src="img/community-page/icon-open.svg" alt="icon-equiel">
+									<img class="dropdown__menu-close" src="img/community-page/cross-close.svg" alt="icon-cross">
+								</div>
+								Статус станций
+							</div>
+							<li class="dropdown__list">
+								<label class="custom-checkbox">
+									<input type="checkbox" checked>
+									<span class="checkmark">
+										<img class="checkmark__icon" src="img/community-page/checkmark.svg" alt="checkmark">
+									</span>
+									Все
+								</label>
+								<label class="custom-checkbox">
+									<input type="checkbox">
+									<span class="checkmark">
+										<img class="checkmark__icon" src="img/community-page/checkmark.svg" alt="checkmark">
+									</span>
+									Online
+								</label>
+								<label class="custom-checkbox">
+									<input type="checkbox">
+									<span class="checkmark">
+										<img class="checkmark__icon" src="img/community-page/checkmark.svg" alt="checkmark">
+									</span>
+									Offline
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- !выпадашка фильтр -->
+
+				<div class="catalog__row">
+					<a class="catalog__item catalog-item" href="recording.html">
+
+						<div class="catalog-item__img" style="background-image: url(img/catalog/catalog-item-1.png);">
+							<div class="catalog-item__status catalog-item__status--active"></div>
+							<div class="catalog-item__lang lang-ico">Ru</div>
+						</div>
+						<p class="catalog-item__name">Взгляд предков</p>
+
+						<p class="catalog-item__descr">
+							Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+							сгенерировать несколько абзацев более менее осмысленного
+							текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних
+							условиях.
+						</p>
+						<audio controls class="catalog-item__player">
+							<source src="#" type="audio/mpeg">
+							Ваш браузер не поддерживает воспроизведение аудио.
+						</audio>
+						<object type="link">
+							<a href="recording.html" class="catalog-item__btn-more">Подробнее</a>
+						</object>
+					</a>
+					<a class="catalog__item catalog-item" href="recording.html">
+						<div class="catalog-item__img" style="background-image: url(img/catalog/catalog-item-2.png);">
+							<div class="catalog-item__status "></div>
+							<div class="catalog-item__lang lang-ico">Ru</div>
+						</div>
+						<p class="catalog-item__name">Взгляд предков</p>
+
+						<p class="catalog-item__descr">
+							Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+							сгенерировать несколько абзацев более менее осмысленного
+							текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних
+							условиях.
+						</p>
+						<audio controls class="catalog-item__player">
+							<source src="#" type="audio/mpeg">
+							Ваш браузер не поддерживает воспроизведение аудио.
+						</audio>
+						<object type="link">
+							<a href="recording.html" class="catalog-item__btn-more">Подробнее</a>
+						</object>
+					</a>
+					<a class="catalog__item catalog-item" href="recording.html">
+
+						<div class="catalog-item__img" style="background-image: url(img/catalog/catalog-item-3.png);">
+							<div class="catalog-item__status catalog-item__status--active"></div>
+							<div class="catalog-item__lang lang-ico">Ru</div>
+						</div>
+						<p class="catalog-item__name">Взгляд предков</p>
+
+						<p class="catalog-item__descr">
+							Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+							сгенерировать несколько абзацев более менее осмысленного
+							текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних
+							условиях.
+						</p>
+						<audio controls class="catalog-item__player">
+							<source src="#" type="audio/mpeg">
+							Ваш браузер не поддерживает воспроизведение аудио.
+						</audio>
+						<object type="link">
+							<a href="recording.html" class="catalog-item__btn-more">Подробнее</a>
+
+						</object>
+					</a>
+					<a class="catalog__item catalog-item" href="recording.html">
+
+						<div class="catalog-item__img" style="background-image: url(img/catalog/catalog-item-4.png);">
+							<div class="catalog-item__status "></div>
+							<div class="catalog-item__lang lang-ico">Ru</div>
+						</div>
+						<p class="catalog-item__name">Взгляд предков</p>
+
+						<p class="catalog-item__descr">
+							Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+							сгенерировать несколько абзацев более менее осмысленного
+							текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних
+							условиях.
+						</p>
+						<audio controls class="catalog-item__player">
+							<source src="#" type="audio/mpeg">
+							Ваш браузер не поддерживает воспроизведение аудио.
+						</audio>
+						<object type="link">
+							<a href="recording.html" class="catalog-item__btn-more">Подробнее</a>
+
+						</object>
+					</a>
+					<a class="catalog__item catalog-item" href="recording.html">
+
+						<div class="catalog-item__img" style="background-image: url(img/catalog/catalog-item-3.png);">
+							<div class="catalog-item__status catalog-item__status--active"></div>
+							<div class="catalog-item__lang lang-ico">Ru</div>
+						</div>
+						<p class="catalog-item__name">Взгляд предков</p>
+
+						<p class="catalog-item__descr">
+							Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+							сгенерировать несколько абзацев более менее осмысленного
+							текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних
+							условиях.
+						</p>
+						<audio controls class="catalog-item__player">
+							<source src="#" type="audio/mpeg">
+							Ваш браузер не поддерживает воспроизведение аудио.
+						</audio>
+						<object type="link">
+							<a href="recording.html" class="catalog-item__btn-more">Подробнее</a>
+
+						</object>
+					</a>
+					<a class="catalog__item catalog-item" href="recording.html">
+
+						<div class="catalog-item__img" style="background-image: url(img/catalog/catalog-item-4.png);">
+							<div class="catalog-item__status "></div>
+							<div class="catalog-item__lang lang-ico">Ru</div>
+						</div>
+						<p class="catalog-item__name">Взгляд предков</p>
+
+						<p class="catalog-item__descr">
+							Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+							сгенерировать несколько абзацев более менее осмысленного
+							текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних
+							условиях.
+						</p>
+						<audio controls class="catalog-item__player">
+							<source src="#" type="audio/mpeg">
+							Ваш браузер не поддерживает воспроизведение аудио.
+						</audio>
+						<object type="link">
+							<a href="recording.html" class="catalog-item__btn-more">Подробнее</a>
+
+						</object>
+					</a>
+				</div>
+
+				<div class="pagination">
+					<nav aria-label="pagination" class="pagination__nav pagination-nav">
+						<ul class="pagination-nav__list">
+							<li class="pagination-nav__item pagination-nav__item--disabled nav-item-prev">
+								<a class="pagination-nav__link" href="#" aria-label="Previous" title="Previous">
+									<img src="img/pagination-arrow.svg" alt="pagination arrow">
+								</a>
+							</li>
+							<li class="pagination-nav__item pagination-nav__item--active">
+								<a class="pagination-nav__link" href="#">1</a>
+							</li>
+							<li class="pagination-nav__item"><a class="pagination-nav__link" href="#">2</a></li>
+							<li class="pagination-nav__item"><a class="pagination-nav__link" href="#">3</a></li>
+							<li class="pagination-nav__item"><a class="pagination-nav__link" href="#">...</a></li>
+							<li class="pagination-nav__item"><a class="pagination-nav__link" href="#">6</a></li>
+							<li class="pagination-nav__item nav-item-next">
+								<a class="pagination-nav__link " href="#" aria-label="Next" title="next">
+									<img src="img/pagination-arrow.svg" alt="pagination arrow">
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+		</section>
+		<!-- !Catalog -->
+
+		<!-- !mobile nav нижнее меню -->
+		<section class="mobile-nav">
+			<div class=" mobile-nav__container container">
+				<div class="mobile-nav__row">
+					<nav class="mobile-nav__menu mobile-menu">
+						<ul class="mobile-menu__list">
+							<li class="mobile-menu__btn btn-mobile-menu">
+								<a href="catalog.html">
+									<span>Каталог</span>
+									<svg class="btn-mobile-menu__ico catalog-ico-btn" xmlns="http://www.w3.org/2000/svg"
+										width="25" height="25" viewBox="0 0 25 25" fill="none">
+										<rect x="0.5" y="0.5" width="11" height="11" rx="1.5" stroke="#23262F" />
+										<rect x="0.5" y="13.5" width="11" height="11" rx="1.5" stroke="#23262F" />
+										<rect x="13.5" y="0.5" width="11" height="11" rx="1.5" stroke="#23262F" />
+										<rect x="13.5" y="13.5" width="11" height="11" rx="1.5" stroke="#23262F" />
+									</svg>
+								</a>
+							</li>
+							<li class="mobile-menu__btn btn-mobile-menu">
+								<a href="community.html">
+									<span>Сообщество</span>
+									<svg class="btn-mobile-menu__ico community-ico-btn" xmlns="http://www.w3.org/2000/svg"
+										width="43" height="23" viewBox="0 0 43 23" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M23.526 12.678C26.1238 11.8267 28 9.38244 28 6.5C28 2.91015 25.0899 0 21.5 0C17.9101 0 15 2.91015 15 6.5C15 9.38244 16.8762 11.8267 19.474 12.678C16.9589 13.1256 14.7392 14.3912 13.1365 16.1788C12.2566 15.4749 11.2339 14.9615 10.1223 14.6987C11.8059 14.0477 13 12.4133 13 10.5C13 8.01472 10.9853 6 8.5 6C6.01472 6 4 8.01472 4 10.5C4 12.3888 5.16367 14.0058 6.8132 14.6732C3.18797 15.4704 0.5 18.9226 0.5 23H1.5C1.5 18.8213 4.63047 15.5 8.41355 15.5C9.94145 15.5 11.3561 16.0375 12.5046 16.9539C11.2427 18.6606 10.5 20.7445 10.5 23H11.5C11.5 17.776 15.9539 13.5 21.5 13.5C27.0461 13.5 31.5 17.776 31.5 23H32.5C32.5 20.7609 31.768 18.6909 30.5228 16.9911C31.6721 16.0518 33.0948 15.5 34.6325 15.5C38.3873 15.5 41.5 18.8183 41.5 23H42.5C42.5 18.916 39.8178 15.4553 36.1998 14.6679C37.8424 13.9973 39 12.3838 39 10.5C39 8.01472 36.9853 6 34.5 6C32.0147 6 30 8.01472 30 10.5C30 12.4215 31.2043 14.0616 32.8992 14.707C31.7893 14.9766 30.7694 15.4992 29.8943 16.2133C28.2894 14.4075 26.0572 13.1285 23.526 12.678ZM27 6.5C27 9.53757 24.5376 12 21.5 12C18.4624 12 16 9.53757 16 6.5C16 3.46243 18.4624 1 21.5 1C24.5376 1 27 3.46243 27 6.5ZM38 10.5C38 12.433 36.433 14 34.5 14C32.567 14 31 12.433 31 10.5C31 8.567 32.567 7 34.5 7C36.433 7 38 8.567 38 10.5ZM8.5 14C10.433 14 12 12.433 12 10.5C12 8.567 10.433 7 8.5 7C6.567 7 5 8.567 5 10.5C5 12.433 6.567 14 8.5 14Z" />
+									</svg>
+								</a>
+							</li>
+							<li class="mobile-menu__btn btn-mobile-menu btn-mobile-menu--active">
+								<a href="guides.html">
+									<span>Гайды</span>
+									<svg class="btn-mobile-menu__ico guides-ico-btn" xmlns="http://www.w3.org/2000/svg"
+										width="20" height="25" viewBox="0 0 20 25" fill="none">
+										<path
+											d="M9.33498 11.0501C9.33498 10.5533 9.42857 10.1409 9.61576 9.81301C9.80296 9.48509 10.1379 9.09259 10.6207 8.6355C11.0148 8.27778 11.2956 7.97471 11.4631 7.72629C11.6404 7.46793 11.7291 7.15989 11.7291 6.80217C11.7291 6.3252 11.5764 5.94264 11.2709 5.65447C10.9655 5.35637 10.5419 5.20732 10 5.20732C9.50739 5.20732 9.1133 5.3514 8.81773 5.63957C8.53202 5.9178 8.31527 6.26558 8.16749 6.68293L7 6.19106C7.21675 5.61472 7.57143 5.10795 8.06404 4.67073C8.55665 4.22358 9.19704 4 9.98522 4C10.5764 4 11.0985 4.12421 11.5517 4.37263C12.0148 4.61111 12.3695 4.94399 12.6158 5.37127C12.8719 5.79856 13 6.27552 13 6.80217C13 7.34869 12.8621 7.81572 12.5862 8.20325C12.3202 8.58085 11.9754 8.96341 11.5517 9.35095C11.2266 9.64905 10.9901 9.93225 10.8424 10.2005C10.6946 10.4688 10.6207 10.7818 10.6207 11.1396V11.7656H9.33498V11.0501ZM9.97044 15C9.71429 15 9.49261 14.9106 9.30542 14.7317C9.12808 14.5429 9.03941 14.3144 9.03941 14.0461C9.03941 13.7877 9.12808 13.5691 9.30542 13.3902C9.49261 13.2014 9.71429 13.107 9.97044 13.107C10.2365 13.107 10.4581 13.2014 10.6355 13.3902C10.8227 13.5691 10.9163 13.7877 10.9163 14.0461C10.9163 14.3144 10.8227 14.5429 10.6355 14.7317C10.4581 14.9106 10.2365 15 9.97044 15Z" />
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 1.96078C0 0.877889 0.895432 0 2 0H18C19.1046 0 20 0.877889 20 1.96078V18.6275C20 18.8982 19.7761 19.1176 19.5 19.1176H2.5C1.67157 19.1176 1 19.776 1 20.5882V22.549C1 23.3612 1.67157 24.0196 2.5 24.0196H19.5C19.7761 24.0196 20 24.2391 20 24.5098C20 24.7805 19.7761 25 19.5 25H2.5C1.11929 25 0 23.9027 0 22.549V1.96078ZM2 0.980392H18C18.5523 0.980392 19 1.41931 19 1.96078V18.1373H2.5C1.93719 18.1373 1.41783 18.3196 1 18.6273V1.96078C1 1.41931 1.44772 0.980392 2 0.980392Z" />
+									</svg>
+								</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</section>
+		<!-- !/mobile nav нижнее меню -->
+	</main>
+
+	<footer class="footer">
+		<div class="footer__copy">Voice crew, 2023</div>
+	</footer>
+
+	<!-- Скрипт записи языка в поисковую строку (get запрос) -->
+	<script defer>
+		const languageOptions = document.querySelectorAll('.btn-lang');
+
+		languageOptions.forEach((option) => {
+			option.addEventListener('click', () => {
+				const languageValue = option.dataset.value;
+
+				const urlParams = new URLSearchParams(window.location.search);
+				urlParams.set('lang', languageValue);
+				window.location.href = window.location.pathname + '?' + urlParams.toString();
+			});
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="25" height="25" fill="#E6E6E6"/>
+<g id="iPhone 14 - &#208;&#161;&#208;&#190;&#208;&#190;&#208;&#177;&#209;&#137;&#208;&#181;&#209;&#129;&#209;&#130;&#208;&#178;&#208;&#190;" clip-path="url(#clip0_0_1)">
+<rect width="390" height="1502" transform="translate(-50 -1432)" fill="#F5F5F7"/>
+<g id="Rectangle 167">
+<mask id="path-1-inside-1_0_1" fill="white">
+<path d="M-50 -15H340V70H-50V-15Z"/>
+</mask>
+<path d="M-50 -15H340V70H-50V-15Z" fill="white"/>
+<path d="M-50 -14H340V-16H-50V-14Z" fill="url(#paint0_linear_0_1)" mask="url(#path-1-inside-1_0_1)"/>
+</g>
+<g id="Group 60">
+<g id="Group 53">
+<rect id="Rectangle 168" x="0.5" y="0.5" width="11" height="11" rx="1.5" stroke="#777E90"/>
+<rect id="Rectangle 170" x="0.5" y="13.5" width="11" height="11" rx="1.5" stroke="#777E90"/>
+<rect id="Rectangle 169" x="13.5" y="0.5" width="11" height="11" rx="1.5" stroke="#777E90"/>
+<rect id="Rectangle 171" x="13.5" y="13.5" width="11" height="11" rx="1.5" stroke="#777E90"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_1" x1="282" y1="-15" x2="13" y2="-15" gradientUnits="userSpaceOnUse">
+<stop stop-color="#ECECF2"/>
+<stop offset="0.511211" stop-color="#23262F"/>
+<stop offset="1" stop-color="#ECECF2"/>
+</linearGradient>
+<clipPath id="clip0_0_1">
+<rect width="390" height="1502" fill="white" transform="translate(-50 -1432)"/>
+</clipPath>
+</defs>
+</svg>
